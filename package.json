@@ -1,0 +1,17 @@
+{
+  "name": "raspberry-test-peripherals",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roland-vachter/raspberry-test-peripherals.git"
+  },
+  "author": "Roland Vachter",
+  "dependencies": {
+  	"lcd": "^1.1.2"
+  }
+}
