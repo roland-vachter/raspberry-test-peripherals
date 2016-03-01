@@ -4,7 +4,7 @@ var Lcd = require('lcd'),
 		e: 16,
 		data: [5, 6, 13, 19],
 		cols: 16,
-		rows: 1
+		rows: 2
 	});
 
 lcd.on('ready', function() {
