@@ -1,0 +1,26 @@
+{
+  "eqeqeq": true,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "newcap": true,
+  "noarg": true,
+  "nonbsp": true,
+  "undef": true,
+  "unused": "vars",
+  "strict": true,
+  "trailing": true,
+  "indent": 1,
+  "esnext": true,
+  "expr": true,
+  "gcl": true,
+  "globalstrict": true,
+  "lastsemic": true,
+  "multistr": true,
+  "smarttabs": true,
+  "sub": true,
+
+  "browser": true,
+  "nonstandard": true,
+  "predef": ["require", "module", "exports", "requireText", "__dirname", "console", "describe", "it", "process", "Buffer"]
+}
