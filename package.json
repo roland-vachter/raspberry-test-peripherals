@@ -12,6 +12,7 @@
   },
   "author": "Roland Vachter",
   "dependencies": {
-  	"lcd": "^1.1.2"
+  	"lcd": "^1.1.2",
+  	"rpio": "^0.9.9"
   }
 }
