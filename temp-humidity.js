@@ -44,7 +44,7 @@ function TempSensor (type, pin) {
 		let timeout = 100000;
 		while (rpio.read(pin) === rpio.HIGH) {
 			if (--timeout < 0) {
-				return -3;
+				new Error("Timeout");
 			}
 			rpio.usleep(1);
 		}
@@ -54,20 +54,25 @@ function TempSensor (type, pin) {
 			counter = 0;
 			while (rpio.read(pin) === laststate) {
 				counter++;
-				if (counter === 1000)
+				if (counter === 1000) {
+					console.log('break1');
 					break;
+				}
 			}
 
 			laststate = rpio.read(pin);
 			if (counter === 1000) {
+				console.log('break2');
 				break;
 			}
 			
 			if ((i>3) && (i%2 === 0)) {
 				// shove each bit into the storage bytes
 				data[j/8] <<= 1;
-				if (counter > 200)
+				if (counter > 200) {
 					data[j/8] |= 1;
+				}
+
 				j++;
 			}
 		}
